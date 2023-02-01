@@ -3,10 +3,10 @@ window.addEventListener('load', () => {
     const buttonLeft = document.getElementById('prec');
 
     buttonRight.onclick = function () {
-        document.getElementById('commentCat').scrollLeft += 1150;
+        document.getElementById('commentCat').scrollLeft += 850;
     };
 
     buttonLeft.onclick = function () {
-        document.getElementById('commentCat').scrollLeft -= 1150;
+        document.getElementById('commentCat').scrollLeft -= 850;
     };
 });

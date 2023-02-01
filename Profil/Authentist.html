@@ -1,117 +1,225 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
 
-<head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@400;700&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="authentistdesign.css" />
 
-    <!-- Mettre les typos de Google Font Ici -->
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@400;700&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="authentistdesign.css" />
-
-</head>
-
-<body>
-    <div class="container">
-
-        <div class="div1">
-            <img id="photojuliette" src="photojuliette.jpg" />
-            <h3><b id="Juliette">Juliette Cortes</b></h3>
-            <ul class="menubarregauche">
-                <strong>
-                    <li>Ma collection</li>
-                    <li>Profil</li>
-                    <li>Favoris</li>
-                </strong>
-            </ul>
-            <button id="sedeco">Se déconnecter</button>
-        </div>
-
-        <div class="div2">
-            <div class="banner">
-                <h2>Profil</h2>
-                <button> <img src="Drapeau.svg" /> Français
-                </button>
+    <body>
+        <header class="header">
+        
+            <div class="part-left">
+                <img class="logo-auth" src="../Images/Authentist..svg"/> 
             </div>
-            <div class="infoContainer">
+
+            <div class="part-right">
+
+                <div class="part-bottom">
+                    <nav class="menu-2">
+                        <ul class="menu-header-2">
+                            <li>Peinture</li>
+                            <li>Sculpture</li>
+                            <li>Photographie</li>
+                            <li>Dessin</li>
+                            <li>Autres</li>
+                            <li>Artistes</li>
+                        </ul>
+                    </nav>
+
+                    <form  class="recherche" action="monaction.php" method="post" enctype="multipart/form-data"> 
+                        <input  class="look" type="text" name="recherche" placeholder="Recherche" />
+                    </form>    
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="div1">
+                <img id="photojuliette" src="../Images/photojuliette.jpg" />
+                <h3><b id="Juliette">Juliette Cortes</b></h3>
+
+                <ul class="menubarregauche">
+                    <strong>
+                        <li>Ma collection</li>
+                        <li>Profil</li>
+                        <li>Favoris</li>
+                    </strong>
+                </ul>
+
+                <button id="sedeco">Se déconnecter</button>
+            </div>
+
+            <div class="div2">
+                <div class="banner">
+                    <h2>Profil</h2>
+                    <button><img src="../Images/Drapeau.svg" />Français</button>
+                </div>
+
+                <div class="infoContainer">
                     <ul class="profil">
                         <li><strong>Profil personnel</strong></li>
                         <li>Sécurité</li>
                         <li>Historique de conversations</li>
                     </ul>
 
-                <fieldset>
-                    <div class="Identite">
-                        <legend>
-                            <h3>Identité</h3>
-                        </legend>
-                        <img src="photojuliette.jpg" />
-                        <p>
-                            <label for="prenom">Prénom</label></br>
-                            <input type="text" name="prenom" id="prenom" value="Juliette" placeholder="Prénom" />
-                        </p>
-                        <p>
-                            <label for="nom">Nom</label></br>
-                            <input type="text" name="nom" id="nom" value="Cortes" placeholder="Nom" />
-                        </p>
-                        <p>
-                            <label for="nom">Date de Naissance</label></br>
-                            <input type="Date" name="date" id="date" value="1995-09-11" placeholder="jj/mm/aa" />
-                        </p>
+                    <fieldset>
+                        <div class="Identite">
+                            <legend>
+                                <h3>Identité</h3>
+                            </legend>
+
+                            <img src="../Images/photojuliette.jpg"/>
+                            <p>
+                                <label for="prenom">Prénom</label></br>
+                                <input type="text" name="prenom" id="prenom" value="Juliette" placeholder="Prénom" />
+                            </p>
+                            <p>
+                                <label for="nom">Nom</label></br>
+                                <input type="text" name="nom" id="nom" value="Cortes" placeholder="Nom" />
+                            </p>
+                            <p>
+                                <label for="nom">Date de Naissance</label></br>
+                                <input type="Date" name="date" id="date" value="1995-09-11" placeholder="jj/mm/aa" />
+                            </p>
+                        </div>
+                    </fieldset>
+
+                    <div class="div3">
+                        <fieldset>
+                            <div class="Livraison">
+                                <legend>
+                                    <h3>Livraison</h3>
+                                </legend>
+
+                                <p>
+                                    <label for="pays">Pays</label> </br>
+                                    <input type="text" name="pays" id="pays" value="France" placeholder="Pays" />
+                                </p>
+                                <p>
+                                    <label for="ville">Ville</label> </br>
+                                    <input type="text" name="ville" id="ville" value="Paris 2e" placeholder="Ville" />
+                                </p>
+                                <p>
+                                    <label for="adresse">Adresse</label> </br>
+                                    <input type="text" name="adresse" id="adresse" value="1 rue Saint Sauveur" placeholder="Numéro et Nom de la rue"/>
+                                </p>
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="Contact">
+                                <legend>
+                                    <h3>Contact</h3>
+                                </legend>
+
+                                <p>
+                                    <label for="mail">Adresse mail</label>
+                                    <input type="email" name="mail" id="mail" value="juliette.cortes@gmail.com" placeholder="Adresse mail" />
+                                </p>
+                                <p>
+                                    <label for="telephone">Téléphone</label>
+                                    <input type="tel" name="telephone" id="telephone" value="0772776956" placeholder="Numéro" />
+                                </p>
+                            </div>
+                        </fieldset>
                     </div>
-                </fieldset>
-
-                <div class="div3">
-                    <fieldset>
-                        <div class="Livraison">
-                            <legend>
-                                <h3>Livraison</h3>
-                            </legend>
-                            <p>
-                                <label for="pays">Pays</label> </br>
-                                <input type="text" name="pays" id="pays" value="France" placeholder="Pays" />
-                            </p>
-                            <p>
-                                <label for="ville">Ville</label> </br>
-                                <input type="text" name="ville" id="ville" value="Paris 2e" placeholder="Ville" />
-                            </p>
-                            <p>
-                                <label for="adresse">Adresse</label> </br>
-                                <input type="text" name="adresse" id="adresse" value="1 rue Saint Sauveur"
-                                    placeholder="Numéro et Nom de la rue" />
-                            </p>
-                        </div>
-                    </fieldset>
-
-                    <fieldset>
-                        <div class="Contact">
-                            <legend>
-                                <h3>Contact</h3>
-                            </legend>
-                            <p>
-                                <label for="mail">Adresse mail</label>
-                                <input type="email" name="mail" id="mail" value="juliette.cortes@gmail.com"
-                                    placeholder="Adresse mail" />
-                            </p>
-                            <p>
-                                <label for="telephone">Téléphone</label>
-                                <input type="tel" name="telephone" id="telephone" value="0772776956"
-                                    placeholder="Numéro" />
-                            </p>
-                        </div>
-                    </fieldset>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        
+        <footer class="footer" >
+
+            <div class="top-part">
+                <div class="partie-1">
+                    <img class="logo-authentist" src="../Images/Authentist.svg">
+                    <ul class="liste-icon">
+                        <div class="reseaux">
+                            <li> <img src="../Images/facebook.png"> </li>
+                            <li> <img src="../Images/insta.png"> </li>
+                            <li> <img src="../Images/pinterest.png"> </li>
+                            <li> <img src="../Images/linkedin.png"> </li>
+                        </div>
+                    </ul>
+
+                    <p class="exclu" > Recevez nos actualités en exclusivité ! </p>    
+
+                    <form class="forme">
+                        <input class="email"  type="text" name="name" placeholder="Votre email" />
+                        <button class="ok" > OK </button>
+                    </form>
+
+                    <p class="cookies">
+                        En vous inscrivant vous acceptez nos <a href="#CGV">CGV</a> et notre <a href="#politique">politique de confidentialité</a> et cookies.
+                    </p>
+                </div>
+
+                <div class="partie-2">
+                    <ul class="lesartistes"> 
+                        <li class="plan"> Plan du site </li>
+                        <li>Peinture</li>
+                        <li>Sculpture</li>
+                        <li>Photographie</li>
+                        <li>Dessin</li>
+                        <li>Autres</li>
+                        <li>Artistes</li>
+                    </ul>
+                </div>
+
+                <div class="partie-3">  
+                    <ul class="lesguides" >
+                        <li class="aide"> Aide et guides </li>
+                        <li> Qui sommes-nous ? </li>
+                        <li> Comment ça marche ? </li>
+                        <li> Mon compte </li>
+                        <li> Notre sélection d’artiste </li>
+                        <li> Certification avec le principe de NFT </li>
+                        <li> Contactez-nous </li>
+                    </ul>
+                </div>
+
+                <div class="partie-4">
+                    <ul class="separation" > 
+                        <li class="artiste"> Pour les artistes </li>
+                        <li> Connexion Authentist </li>
+                        <li> Envoyer votre candidature </li>
+                        <li> Questions fréquentes </li>
+                    </ul>
+                
+                    <ul> 
+                        <li class="paiement" > Paiement sécurisé  </li>
+                        <div class="icon-paiement"> 
+                            <li> <img src="../Images/paypal.png"> </li>
+                            <li> <img src="../Images/american.png"> </li>
+                            <li> <img src="../Images/visa.png"> </li>
+                            <li> <img src="../Images/mastercard.png"> </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="second-part">
+                <div class="foot">
+                    <ul>
+                        <li> Conditions générales d’utilisation </li>
+                        <li> Conditions générales de vente </li>
+                        <li> Mentions légales </li>
+                        <li> Vie privée et cookies </li>
+                        <li class="final"> ©2023 Authentist. </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </body>
 
 </html>

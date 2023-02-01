@@ -1,0 +1,68 @@
+
+body {
+    background-color: #FFFEF3;
+    font-family: 'Maitree';
+    font-size: 22px;
+}
+
+h3 {
+    font-family: 'Maitree';
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.total {
+  margin:80px;
+}
+.acceuil-produit{
+  margin-bottom: 40px;
+}
+
+.petiteimage{
+  margin-right: 12px;
+  gap:19px;
+  display: flex;
+  flex-direction:column;
+}
+
+.prix {
+    background-color: black;
+    color: white;
+    width: 110px;
+    padding: 30px 0;
+    text-align: center;
+    font-weight: bold;
+}
+button{
+  font-family: 'Maitree';
+  background-color: #FF8059;
+  color: b;
+  padding: 10px 20px;
+  border-radius: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contenu-produit {
+  display: flex;
+}
+.imageproduit{
+  height: 400px;
+}
+#petite1{
+  height: 190px;
+}
+#petite2{
+  height: 190px;
+}
+.product-details{
+  margin-left:200px;
+}
+.nom-produit-prix{
+  display:flex;
+  flex-direction: row;
+}
+
+
