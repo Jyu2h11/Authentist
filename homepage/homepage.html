@@ -7,6 +7,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Maitree&display=swap" rel="stylesheet">
+
+        <script src="homepage.js"></script>
     </head>
     <body>
         <div class="intro">
@@ -145,7 +147,7 @@
             <div class="article">
                 <div class="contenu">
                     <div class="text">
-                        <h3>Math the Printer<p>Linogravure et gravure sur bois médiéval sombre</p></h3>
+                        <h3><p>Math the Printer</p>Linogravure et gravure sur bois médiéval sombre</h3>
                         <p>Bienvenue dans mon univers ! Ici vous trouverez mes artworks inspirés des estampes des XVè et XVIè siècles !</p>
                         <p>Attendez vous à rencontrer squelettes, monstruosités, mais aussi des personnages de pop culture, issus des mondes de Tolkien, ou de Warhammer 40K ! Mes compétences se sont beaucoup améliorées au cours de toutes ces années, et je pense que cela signifierait quelque chose de vous offrir mon tout dernier tirage. Il s'agit de ma dernière œuvre d'art, représentant Anakin lors de l'ordre 66. J'en suis très fier, cela m'a permis d'essayer de nombreuses nouvelles techniques et de continuer à utiliser l'encrage à la plume directement sur lino.</p>
                     </div>
@@ -158,72 +160,73 @@
                     </div>
                 </div>
 
-                <a>Lire la suite <img src="../Images/Fleche.svg"/></a>
+                <p id="a">Lire la suite <img src="../Images/Fleche.svg"/></p>
             </div>
-
-            <img src="../Images/Fleche_suivant.svg"/><img src="../Images/Fleche_suivant.svg"/>
         </div>
 
         <div class="comment">
             <h2>Notre certificat d'authenticité : comment ça marche ?</h2>
             
-            <div class="commentCat">
-                <div class="commentDiv">
+            <div id="commentCat">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_verifie.svg"/>
                     <h3>Artistes vérifiés Paiement 100% sécurisé</h3>
                     <p>Nous travaillons uniquement avec des artistes qui ont accepté de vérifier leur identité, afin d’assurer l’origine des oeuvres. La commande est encadrée par un paiement sécurisé.</p>
                 </div>
 
-                <img src="../Images/Vecteur.svg"/>
+                <img class="commentDiv" id="img" src="../Images/Vecteur.svg"/>
 
-                <div class="commentDiv">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_QRcode.svg"/>
                     <h3>Votre oeuvre possède un QR code unique</h3>
                     <p>Nous envoyons à l’artiste un QR code unique relié à votre certificat d’authenticité sous la forme d’une étiquette.</p>
                 </div>
 
-                <img src="../Images/Vecteur.svg"/>
+                <img class="commentDiv" id="img" src="../Images/Vecteur.svg"/>
 
-                <div class="commentDiv">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_etiquette.svg"/>
                     <h3>Etiquette résistante respectueuse de l’oeuvre</h3>
                     <p>L’artiste applique l’étiquette adhésive sur laquelle se trouve le QR code relié à son oeuvre. Celle-ci a été étudiée pour ne pas abimer l’oeuvre tout en restant robuste dans le temps.</p>
                 </div>
 
-                <img src="../Images/Vecteur.svg"/>
+                <img class="commentDiv" id="img" src="../Images/Vecteur.svg"/>
 
-                <div class="commentDiv">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_ obtention.svg"/>
                     <h3>Obtention immédiate du certificat d’authenticité</h3>
                     <p>Retrouvez directement après votre commande votre certificat d’authenticité sur votre espace compte.</p>
                 </div>
 
-                <img src="../Images/Vecteur.svg"/>
+                <img class="commentDiv" id="img" src="../Images/Vecteur.svg"/>
 
-                <div class="commentDiv">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_partenaire.svg"/>
                     <h3>Partenaire d’expédition fiable</h3>
                     <p>Une fois l’oeuvre emballée et protégée par l’artiste, notre partenaire de transport le réceptionne et l’achemine vers votre adresse de livraison souhaitée. Votre oeuvre arrive à bon port et en bon état.</p>
                 </div>
 
-                <img src="../Images/Vecteur.svg"/>
+                <img class="commentDiv" id="img" src="../Images/Vecteur.svg"/>
 
-                <div class="commentDiv">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_livraison.svg"/>
                     <h3>Livraison Rapide</h3>
                     <p>Recevez votre colis sous 15 jours ouvrés maximum.</p>
                 </div>
 
-                <img src="../Images/Vecteur.svg"/>
+                <img class="commentDiv" id="img" src="../Images/Vecteur.svg"/>
 
-                <div class="commentDiv">
+                <div class="commentDiv" id="explications">
                     <img src="../Images/Icone_certificat.svg"/>
                     <h3>Certificat d’authenticité fiable et dématérialisé</h3>
                     <p>Grâce aux QR codes, l’oeuvre est reliée éternellement au certificat d’authenticité de manière dématérialisée : Plus de perte de document, pas de contrefaçon !</p>
                 </div>
             </div>
 
-            <img src="../Images/Fleche_suivant.svg"/><img src="../Images/Fleche_suivant.svg"/>
+            <div class="fleche">
+                <button id="prec"><img src="../Images/Fleche_suivant.svg"/></button>
+                <button id="suiv"><img src="../Images/Fleche_suivant.svg"/></button>
+            </div>
         </div>
 
         <div class="temoignage">
@@ -232,61 +235,57 @@
             <div class="temoignageCat">
                 <div class="temoignageGauche">
                     <div class="temoignageTexteGauche">
-                        <p>Tanguy, peintre contemporain</p>
-                        <div>
-                            <img src="../Images/Quote.svg"/>
-                            <p>Ce site est vraiment excellent! Je peux vendre mes oeuvres plus facilement et de manière plus fiable.</p>
-                            <img src="../Images/Quote.svg"/>                        
-                        </div>
+                        <p id="nom1">Tanguy, peintre contemporain</p>
+                        <img id="quote11" src="../Images/Quote.svg"/>
+                        <p id="text1">Ce site est vraiment excellent! Je peux vendre mes oeuvres plus facilement et de manière plus fiable.</p>
+                        <img id="quote21" src="../Images/Quote.svg"/>
                     </div>
     
                     <div class="temoignageTexteGauche">
-                        <p>Takashi, sculpteur contemporain</p>
-                        <div>
-                            <img src="../Images/Quote.svg"/>
-                            <p>Authentist est un vrai plaisir à utiliser. Ma relation client est bien meilleure et mon travail mis en valeur.</p>
-                            <img src="../Images/Quote.svg"/>                        
-                        </div>
+                        <p id="nom2">Takashi, sculpteur contemporain</p>
+                        <img id="quote12" src="../Images/Quote.svg"/>
+                        <p id="text2">Authentist est un vrai plaisir à utiliser. Ma relation client est bien meilleure et mon travail mis en valeur.</p>
+                        <img id="quote22" src="../Images/Quote.svg"/>   
                     </div>
                 </div>
 
-                <div class="temoignageMilieuGauche">
+                <div class="temoignageMilieuGauche" id="images">
                     <div class="temoignageImageGauche">
-                        <img src="../Images/Tanguy.svg"/>
+                        <img class="img01" src="../Images/Tanguy.svg"/>
+                        <div class="rect01" id="violet"></div>
                     </div>
 
-                    <div class="temoignageImageGauche">
-                        <img src="../Images/Takashi.svg"/>
+                    <div class="temoignageImageGauche" id="images">
+                        <img class="img02" src="../Images/Takashi.svg"/>
+                        <div class="rect02" id="violet"></div>
                     </div>
                 </div>
 
-                <div class="temoignageMilieuDroite">
+                <div class="temoignageMilieuDroite" id="images">
                     <div class="temoignageImageDroite">
-                        <img src="../Images/Juliette.svg"/>
+                        <img class="img03" src="../Images/Juliette.svg"/>
+                        <div class="rect03" id="orange"></div>
                     </div>
 
                     <div class="temoignageImageDroite">
-                        <img src="../Images/Anne.svg"/>
+                        <img class="img04" src="../Images/Anne.svg"/>
+                        <div class="rect04" id="orange"></div>
                     </div>
                 </div>
 
                 <div class="temoignageDroite">
                     <div class="temoignageTexteDroite">
-                        <p>Juliette, passionnée de photographie</p>
-                        <div>
-                            <img src="../Images/Quote.svg"/>
-                            <p>Grâce à Authentist, je suis certaine d’acquérir des photographies authentiques en édition limitée</p>
-                            <img src="../Images/Quote.svg"/>                        
-                        </div>
+                        <p id="nom3">Juliette, passionnée de photographie</p>
+                        <img id="quote13" src="../Images/Quote.svg"/>
+                        <p id="text3">Grâce à Authentist, je suis certaine d’acquérir des photographies authentiques en édition limitée</p>
+                        <img id="quote23" src="../Images/Quote.svg"/>
                     </div>
     
                     <div class="temoignageTexteDroite">
-                        <p>Anne, acheteuse sur Authentist</p>
-                        <div>
-                            <img src="../Images/Quote.svg"/>
-                            <p>Je peux enfin faire mes achats d’oeuvres sur une plateforme sérieuse et professionelle. Merci Authentist.</p>
-                            <img src="../Images/Quote.svg"/>                        
-                        </div>
+                        <p id="nom4">Anne, acheteuse sur Authentist</p>
+                        <img id="quote14" src="../Images/Quote.svg"/>
+                        <p id="text4">Je peux enfin faire mes achats d’oeuvres sur une plateforme sérieuse et professionelle. Merci Authentist.</p>
+                        <img id="quote24" src="../Images/Quote.svg"/>          
                     </div>
                 </div>
             </div>

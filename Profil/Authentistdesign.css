@@ -1,0 +1,151 @@
+/* Styles Commun */
+
+body {
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 37%;
+	font-family: 'Maitree';
+	background: #FFFEF3;
+	color: black;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50%;
+	font-family: 'Unbounded';
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 26px;
+	line-height: 43%;
+	font-family: 'Maitree';
+}
+
+button {
+	font-weight: 400;
+	font-size: 22px;
+	font-family: 'Maitree';
+	background: #FFFEF3;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-left: 7px;
+}
+
+.container {
+	display: flex;
+}
+
+/* Barre de gauche */
+
+.menubarregauche {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	margin-left: 0px;
+	line-height: 70px;
+	font-weight: bold;
+	padding-left: 0px;
+
+}
+
+#Juliette {
+	margin-left: 0px;
+	font-family: 'Maitree';
+	font-size: 26px;
+	padding-left: 0px;
+}
+
+.div1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 25%;
+}
+
+.div2 {
+	background: #94BCF9;
+	width: 75%;
+	height: 100vh;
+	padding: 0px 40px
+}
+
+.banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.infoContainer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background: #94BCF9;
+	gap: 20px;
+}
+
+.profil {
+	line-height: 25px;
+	list-style-type: none;
+	border-style: solid;
+	border-width: 2px;
+	width: 230px;
+	margin-right: 10px;
+	margin-top: 0;
+}
+
+.profil li {
+	margin: 30px 0;
+}
+
+.profil li:nth-child(1){
+	color: #FFFFFF;
+}
+
+fieldset{
+	padding: 0;
+	margin: 0;
+	background-color: #FFFFFF;
+	width: 377px;
+}
+
+.Identite{
+	line-height: 30px;
+	padding-left: 40px;
+}
+
+.Identite img{
+	margin-left: 80px;
+}
+
+input{
+	border: none;
+	border-bottom: 2px solid black;
+	width: 280px;
+	font-size: 22px;
+	font-family: 'Maitree';
+	background-image:url('stylo.svg');
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#date{
+	background: none;
+}
+
+label{
+	font-weight: bold;
+}
+
+.menubarregauche li:nth-child(2) {
+	background-color: #94BCF9;
+	width: 450px;
+	color: white;
+}
+

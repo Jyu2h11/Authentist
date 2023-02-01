@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <!-- Mettre les typos de Google Font Ici -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="authentistdesign.css" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="div1">
+            <img id="photojuliette" src="photojuliette.jpg" />
+            <h3><b id="Juliette">Juliette Cortes</b></h3>
+            <ul class="menubarregauche">
+                <strong>
+                    <li>Ma collection</li>
+                    <li>Profil</li>
+                    <li>Favoris</li>
+                </strong>
+            </ul>
+            <button>Se déconnecter</button>
+        </div>
+
+        <div class="div2">
+            <div class="banner">
+                <h2>Profil</h2>
+                <button> <img src="Drapeau.svg" /> Français
+                </button>
+            </div>
+            <div class="infoContainer">
+                    <ul class="profil">
+                        <li><strong>Profil personnel</strong></li>
+                        <li>Sécurité</li>
+                        <li>Historique de conversations</li>
+                    </ul>
+
+                <fieldset>
+                    <div class="Identite">
+                        <legend>
+                            <h3>Identité</h3>
+                        </legend>
+                        <img src="photojuliette.jpg" />
+                        <p>
+                            <label for="prenom">Prénom</label></br>
+                            <input type="text" name="prenom" id="prenom" value="Juliette" placeholder="Prénom" />
+                        </p>
+                        <p>
+                            <label for="nom">Nom</label></br>
+                            <input type="text" name="nom" id="nom" value="Cortes" placeholder="Nom" />
+                        </p>
+                        <p>
+                            <label for="nom">Date de Naissance</label></br>
+                            <input type="Date" name="date" id="date" value="1995-09-11" placeholder="jj/mm/aa" />
+                        </p>
+                    </div>
+                </fieldset>
+
+                <div class="div3">
+                    <fieldset>
+                        <div class="Livraison">
+                            <legend>
+                                <h3>Livraison</h3>
+                            </legend>
+                            <p>
+                                <label for="pays">Pays</label>
+                                <input type="text" name="pays" id="pays" value="France" placeholder="Pays" />
+                            </p>
+                            <p>
+                                <label for="ville">Ville</label>
+                                <input type="text" name="ville" id="ville" value="Paris 2e" placeholder="Ville" />
+                            </p>
+                            <p>
+                                <label for="adresse">Adresse</label>
+                                <input type="text" name="adresse" id="adresse" value="1 rue Saint Sauveur"
+                                    placeholder="Numéro et Nom de la rue" />
+                            </p>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div class="Contact">
+                            <legend>
+                                <h3>Contact</h3>
+                            </legend>
+                            <p>
+                                <label for="mail">Adresse mail</label>
+                                <input type="email" name="mail" id="mail" value="juliette.cortes@gmail.com"
+                                    placeholder="Adresse mail" />
+                            </p>
+                            <p>
+                                <label for="telephone">Téléphone</label>
+                                <input type="tel" name="telephone" id="telephone" value="0772776956"
+                                    placeholder="Numéro" />
+                            </p>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
