@@ -315,6 +315,24 @@ hr {
     display:block;
 }
 
+.onhover {
+    display: none;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+
+.tableauDiv:hover > .onhover{
+    display: block;
+}
+
+.tableauDiv:hover > img{
+    height: 245.5px;
+    width: 270px;
+    object-fit: cover;
+}
+
 /*Articles*/
 
 .article {
