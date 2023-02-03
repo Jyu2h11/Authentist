@@ -1,0 +1,83 @@
+.body .modal {
+	background-color: #FFFEF3;
+}
+
+
+
+.modal{
+	 max-width: 900px;
+	height: 550px;
+	background-color: #FFFEF3;
+}
+
+
+
+.modal h2 {
+	font-family: 'Unbounded';
+	font-size: 30px;
+	color: #000000;
+	padding: 20px 0px;
+	font-weight: bold;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+}
+
+h3 {
+font-family: 'Maitree';
+font-size: 22px;
+color: #000000;
+font-weight: bold;
+margin-bottom: 10px;
+font-weight: bold;
+}
+
+p {
+font-family: 'Maitree';
+font-size: 16px;
+color: #000000;
+}
+
+.part-haute {
+	display: flex;
+	margin: 72px;
+    margin-left: 135px;
+}
+
+
+.btn {
+    font-family: 'Maitree';
+    font-size: 14px;
+    color: #000000;
+    border: 2px solid black;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+.btn.petitbouton-un {
+   background-color: #FFFFFF;
+}
+
+.btn.petitbouton-deux{
+	    background-color: #DABAF9;
+}
+
+.blocs {
+	display: flex;
+	flex-direction: row;
+	gap:50px;
+	justify-content: center;
+}
+
+.texte {
+	margin-left: 30px;
+	margin-right: 60px;
+	line-height: 30px;
+}
+
+

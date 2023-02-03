@@ -189,6 +189,11 @@ hr {
     border-top: 0.2px solid black;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /*Introduction*/
 
 .intro {

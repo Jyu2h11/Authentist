@@ -1,0 +1,112 @@
+.body .modal {
+	background-color: #FFFEF3;
+}
+
+
+
+.modal{
+	 max-width: 900px;
+	height: 550px;
+	background-color: #FFFEF3;
+}
+
+
+
+.modal h2 {
+	font-family: 'Unbounded';
+	font-size: 30px;
+	color: #000000;
+	padding: 20px 0px;
+	font-weight: bold;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+
+}
+
+.part-gauche img  {
+	margin-top: 35px;
+}
+
+.tout {
+	display: flex;
+}
+
+
+.part-droite {
+	margin-top: 35px;
+	margin-left: 53px;
+}
+
+h3 {
+font-family: 'Maitree';
+font-size: 22px;
+color: #000000;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+p {
+font-family: 'Maitree';
+font-size: 14px;
+color: #000000;
+}
+
+
+
+.petitbouton-1 {
+font-family: 'Maitree';
+font-size: 14px;
+color: #000000;
+text-decoration: underline;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 20px;
+}
+
+.prix{
+	border: 2px solid black;
+	color: white;
+	background-color: black;
+	width: 90px;
+	height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.blocs {
+	display: flex;
+	flex-direction: row;
+	gap:50px;
+}
+
+.bloc {
+	display: flex;
+	flex-direction: row;
+	gap: 305px;
+	margin-bottom: 45px;
+  margin-top: 130px;
+  align-items: center;
+}
+
+.btn {
+    font-family: 'Maitree';
+    font-size: 14px;
+    color: #000000;
+    border: 2px solid black;
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.btn.petitbouton-2 {
+   background-color: #FFFFFF;
+}
+
+.btn.petitbouton-3{
+	    background-color: #FF8059;
+}
