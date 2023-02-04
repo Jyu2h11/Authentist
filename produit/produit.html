@@ -3,6 +3,8 @@
     <head>
          <link href="reset.css" rel="stylesheet"/>
          <link href="styles.css"rel="stylesheet">
+
+         <meta charset="utf-8">
          
          <link rel="preconnect" href="https://fonts.googleapis.com">
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,142 +16,138 @@
          <script src="produit2.js"></script>
     </head>
     
-    <body>
-        
-        <header class="header">
-    
+    <body> 
+        <header>
+            <div class="sub">
                 <a href="../homepage/homepage.html">
                     <div class="part-left">
                         <img class="logo-auth" src="../Images/Authentist..svg"/> 
                     </div>    
                 </a>
-                
-
-            <div class="part-right">
-
-                <div class="part-top">
-                    <nav class="menu">
-                        <ul class="menu-header">
-                            <li> A PROPOS DE NOUS </li>
-                            <li id="btn"> VOUS ÊTES ARTISTE ?</li>
-                        </ul>
-                    </nav>
-
-                    <div class="icons">           
-                        <img class="coeur" src="../Images/Favoris.svg" style="width: 12%;"/>
-                        <a href="../Profil/Authentist.html"><img class="person" src="../Images/Compte.svg" style="width: 40%; padding-top: 10px; padding-bottom: 7px;"/></a>
-                        <img src="../Images/Panier.svg" style="width: 12%;"/>
+                    
+                <div class="part-right">
+                    <div class="part-top">
+                        <nav class="menu">
+                            <ul class="menu-header">
+                                <li> A PROPOS DE NOUS </li>
+                                <li id="btn"> VOUS ÊTES ARTISTE ?</li>
+                            </ul>
+                        </nav>
+    
+                        <div class="icons">           
+                            <img class="coeur" src="../Images/Favoris.svg" style="width: 12%;"/>
+                            <a href="../Profil/Authentist.html"><img class="person" src="../Images/Compte.svg" style="width: 50%; padding-top: 10px; padding-bottom: 7px;"/></a>
+                            <img src="../Images/Panier.svg" style="width: 12%;"/>
+                        </div>
                     </div>
-                </div>
-
-                <div class="part-bottom">
-                    <nav class="menu-2">
-                        <ul class="menu-header-2">
-                            <li>Peinture</li>
-                            <li>Sculpture</li>
-                            <li>Photographie</li>
-                            <li>Dessin</li>
-                            <li>Autres</li>
-                            <li>Artistes</li>
-                        </ul>
-                    </nav>
-
-                    <form  class="recherche" action="monaction.php" method="post" enctype="multipart/form-data"> 
-                        <input  class="look" type="text" name="recherche" placeholder="Recherche" />
-                    </form>    
+    
+                    <div class="part-bottom">
+                        <nav class="menu-2">
+                            <ul class="menu-header-2">
+                                <li>Peinture</li>
+                                <li>Sculpture</li>
+                                <li>Photographie</li>
+                                <li>Dessin</li>
+                                <li>Autres</li>
+                                <li>Artistes</li>
+                            </ul>
+                        </nav>
+    
+                        <form  class="recherche" action="monaction.php" method="post" enctype="multipart/form-data"> 
+                            <input  class="look" type="text" name="recherche" placeholder="Recherche" />
+                        </form>    
+                    </div>
                 </div>
             </div>
         </header>
 
-    <div class="total">
-        
-    
-        <div class="acceuil-produit">
-            Page d'accueil
-            <img src="../Images/fleche_arianne.svg"/>
-            Page produit
-          </div>
-        <div class="contenu-produit">
+        <div class="total">
+            <div class="acceuil-produit">
+                Page d'accueil
+                <img src="../Images/fleche_arianne.svg"/>
+                Page produit
+            </div>
 
-            <div class="images">
-                <div class="petiteimage">
-                    <img id="petite1" class="imageproduit2"src="../Images/imageproduit2.svg" alt="">
-                    <img id="petite2" class="imageproduit2" src="../Images/imageproduit3.svg" alt="">
+            <div class="contenu-produit">
+                <div class="images">
+                    <div class="petiteimage">
+                        <img id="petite1" class="imageproduit2"src="../Images/imageproduit2.svg" alt="">
+                        <img id="petite2" class="imageproduit2" src="../Images/imageproduit3.svg" alt="">
+                    </div>
+
+                    <div class="grandeimage">
+                        <img class="imageproduit" src="../Images/imageproduit1.svg" alt="">
+                        <div class="share">
+                            <img src="../Images/share.svg" alt="">
+                        </div>
+
+                        <div class="favoris">
+                            <a href="../Authentist_-_Pop_up_Favoris/produit.html">
+                                <img src="../Images/Favoris.svg" alt="">
+                            </a>
+                        </div>       
+                    </div>    
                 </div>
-
-                <div class="grandeimage">
-                    <img class="imageproduit" src="../Images/imageproduit1.svg" alt="">
-                         
-                            <div class="share">
-                                <img src="../Images/share.svg" alt="">
+            
+                <div class="product-details">
+                    <div class= "nom-produit-prix">
+                        <div class= "nom-produit">
+                            <div class= "produit-vector">
+                                <h3> Anne du Planty</h3>
+                                <img class="imagevector" src="../Images/Vector.svg" alt="">
                             </div>
-                            <div class="favoris">
-                                <a href="../Authentist_-_Pop_up_Favoris/produit.html">
-                                    <img src="../Images/Favoris.svg" alt="">
-                                </a>
-                            </div>       
-                </div>    
-            </div>
 
-            
-            
-        <div class="product-details">
-            <div class= "nom-produit-prix">
-                <div class= "nom-produit">
-                    <div class= "produit-vector">
-                        <h3> Anne du Planty</h3>
-                        <img class="imagevector" src="../Images/Vector.svg" alt="">
+                            <div class= "product-title">
+                                <p>“Portofino”, 2015 - Peinture : Huile sur lin </p>
+                                <p>20 x 20 x 1 cm</p>
+                            </div>
+                        </div>
+
+                        <div class= "price-box">
+                            200€
+                        </div>     
                     </div>
-                    <div class= "product-title">
-                        <p>“Portofino”, 2015 - Peinture : Huile sur lin </p>
-                        <p>20 x 20 x 1 cm</p>
-                    </div>
-                </div>                
-                <div class= "price-box">200€</div> 
-                    
-                          
-            </div>
        
-            <a href="../Authentist_-_Pop_up_Achat/produit.html" style="text-decoration: none;">
-                <button class="btn" >Ajouter au panier</button>
-            </a>
+                    <a href="../Authentist_-_Pop_up_Achat/produit.html" style="text-decoration: none;">
+                        <button class="btn" >Ajouter au panier</button>
+                    </a>
             
-            <div class="artiste">
-                <p class="p"><b>L’artiste vous en dit plus sur l’oeuvre</b></p>
+                    <div class="artiste">
+                        <p class="p"><b>L’artiste vous en dit plus sur l’oeuvre</b></p>
 
-                <div class="audios">
-                    <div class="audioVideo">
-                        <img src="../Images/Play.svg" style="width: 35px;"/>
-                        <img src="../Images/Music.svg" style="width: 120px;"/>
+                        <div class="audios">
+                            <div class="audioVideo">
+                                <img src="../Images/Play.svg" style="width: 35px;"/>
+                                <img src="../Images/Music.svg" style="width: 120px;"/>
+                            </div>
+            
+                            <div class="audioVideo">
+                                <img src="../Images/Youtube.svg" style="width: 35px;"/>
+                                <p>Voir la vidéo</p>
+                            </div>
+                        </div>
+                        
                     </div>
-    
-                    <div class="audioVideo">
-                        <img src="../Images/Youtube.svg" style="width: 35px;"/>
-                        <p>Voir la vidéo</p>
-                    </div>
-                </div>
-                
-            </div>
 
-            <div class="informations">
-                <div class="info">
-                   <p>Description</p>  
-                   <img src="../Images/FlecheBas.svg"/>
-                </div>               
-                <div class="info">
-                    <p>Entretien</p>          
-                    <img src="../Images/FlecheBas.svg"/>           
-                </div>
-                <div class="info">
-                    <p>Livraison et réception du certificat d’authenticité </p>   
-                    <img src="../Images/FlecheBas.svg"/>            
+                    <div class="informations">
+                        <div class="info">
+                        <p>Description</p>  
+                        <img src="../Images/FlecheBas.svg"/>
+                        </div>               
+                        <div class="info">
+                            <p>Entretien</p>          
+                            <img src="../Images/FlecheBas.svg"/>           
+                        </div>
+                        <div class="info">
+                            <p>Livraison et réception du certificat d’authenticité </p>   
+                            <img src="../Images/FlecheBas.svg"/>            
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 
-    <div id="selection">
+        <div id="selection">
         <h2>Découvrez plus d'oeuvres de l'artiste.</h2>
 
         <div class="tableauCat" id="slide1">
@@ -263,9 +261,9 @@
             <button id="prec1"><img src="../Images/prec.svg"/></button>
             <button id="suiv1"><img src="../Images/suiv.svg"/></button>
         </div>
-    </div>
+        </div>
     
-    <div id="autreArtiste">
+        <div id="autreArtiste">
         <h2>Oeuvres du même style qui pourraient vous plaire.</h2>
 
         <div class="tableauCat" id="slide2">
@@ -380,91 +378,90 @@
             <button id="prec2"><img src="../Images/prec.svg"/></button>
             <button id="suiv2"><img src="../Images/suiv.svg"/></button>
         </div>
-    </div>
-
-    <footer class="footer" >
-
-        <div class="top-part">
-            <div class="partie-1">
-                <img class="logo-authentist" src="../Images/Authentist.svg">
-                <ul class="liste-icon">
-                    <div class="reseaux">
-                        <li> <img src="../Images/facebook.png"> </li>
-                        <li> <img src="../Images/insta.png"> </li>
-                        <li> <img src="../Images/pinterest.png"> </li>
-                        <li> <img src="../Images/linkedin.png"> </li>
-                    </div>
-                </ul>
-
-                <p class="exclu" > Recevez nos actualités en exclusivité ! </p>    
-
-                <form class="forme">
-                    <input class="email"  type="text" name="name" placeholder="Votre email" />
-                    <button class="ok" > OK </button>
-                </form>
-
-                <p class="cookies">
-                    En vous inscrivant vous acceptez nos <a href="#CGV">CGV</a> et notre <a href="#politique">politique de confidentialité</a> et cookies.
-                </p>
-            </div>
-
-            <div class="partie-2">
-                <ul class="lesartistes"> 
-                    <li class="plan"> Plan du site </li>
-                    <li>Peinture</li>
-                    <li>Sculpture</li>
-                    <li>Photographie</li>
-                    <li>Dessin</li>
-                    <li>Autres</li>
-                    <li>Artistes</li>
-                </ul>
-            </div>
-
-            <div class="partie-3">  
-                <ul class="lesguides" >
-                    <li class="aide"> Aide et guides </li>
-                    <li> Qui sommes-nous ? </li>
-                    <li> Comment ça marche ? </li>
-                    <li> Mon compte </li>
-                    <li> Notre sélection d’artiste </li>
-                    <li> Certification avec le principe de NFT </li>
-                    <li> Contactez-nous </li>
-                </ul>
-            </div>
-
-            <div class="partie-4">
-                <ul class="separation" > 
-                    <li class="artiste"> Pour les artistes </li>
-                    <li> Connexion Authentist </li>
-                    <li> Envoyer votre candidature </li>
-                    <li> Questions fréquentes </li>
-                </ul>
-            
-                <ul> 
-                    <li class="paiement" > Paiement sécurisé  </li>
-                    <div class="icon-paiement"> 
-                        <li> <img src="../Images/paypal.png"> </li>
-                        <li> <img src="../Images/american.png"> </li>
-                        <li> <img src="../Images/visa.png"> </li>
-                        <li> <img src="../Images/mastercard.png"> </li>
-                    </div>
-                </ul>
-            </div>
         </div>
 
-        <hr>
+        <footer>
+            <div class="top-part">
+                <div class="parties">
+                    <img class="logo-authentist" src="../Images/Authentist.svg">
+                    <ul class="liste-icon">
+                        <div class="reseaux">
+                            <li> <img src="../Images/facebook.png"> </li>
+                            <li> <img src="../Images/insta.png"> </li>
+                            <li> <img src="../Images/pinterest.png"> </li>
+                            <li> <img src="../Images/linkedin.png"> </li>
+                        </div>
+                    </ul>
 
-        <div class="second-part">
-            <div class="foot">
-                <ul>
-                    <li> Conditions générales d’utilisation </li>
-                    <li> Conditions générales de vente </li>
-                    <li> Mentions légales </li>
-                    <li> Vie privée et cookies </li>
-                    <li class="final"> ©2023 Authentist. </li>
-                </ul>
+                    <p class="exclu" > Recevez nos actualités en exclusivité ! </p>    
+
+                    <form class="forme">
+                        <input class="email"  type="text" name="name" placeholder="Votre email" />
+                        <button class="ok" > OK </button>
+                    </form>
+
+                    <p class="cookies">
+                        En vous inscrivant vous acceptez nos <a href="#CGV">CGV</a> et notre <a href="#politique">politique de confidentialité</a> et cookies.
+                    </p>
+                </div>
+
+                <div class="parties">
+                    <ul class="categories"> 
+                        <li class="cat"> Plan du site </li>
+                        <li>Peinture</li>
+                        <li>Sculpture</li>
+                        <li>Photographie</li>
+                        <li>Dessin</li>
+                        <li>Autres</li>
+                        <li>Artistes</li>
+                    </ul>
+                </div>
+
+                <div class="parties">  
+                    <ul class="categories" >
+                        <li class="cat"> Aide et guides </li>
+                        <li> Qui sommes-nous ? </li>
+                        <li> Comment ça marche ? </li>
+                        <li> Mon compte </li>
+                        <li> Notre sélection d’artiste </li>
+                        <li> Certification avec le principe de NFT </li>
+                        <li> Contactez-nous </li>
+                    </ul>
+                </div>
+
+                <div class="parties">
+                    <ul class="categories" > 
+                        <li class="cat"> Pour les artistes </li>
+                        <li> Connexion Authentist </li>
+                        <li> Envoyer votre candidature </li>
+                        <li> Questions fréquentes </li>
+                    </ul>
+                
+                    <ul class="categories"> 
+                        <li class="cat" > Paiement sécurisé  </li>
+                        <div class="icon-paiement"> 
+                            <li> <img src="../Images/paypal.png"> </li>
+                            <li> <img src="../Images/american.png"> </li>
+                            <li> <img src="../Images/visa.png"> </li>
+                            <li> <img src="../Images/mastercard.png"> </li>
+                        </div>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </footer>
+
+            <hr>
+
+            <div class="second-part">
+                <div class="foot">
+                    <ul>
+                        <li> Conditions générales d’utilisation </li>
+                        <li> Conditions générales de vente </li>
+                        <li> Mentions légales </li>
+                        <li> Vie privée et cookies </li>
+                        <li class="final"> ©2023 Authentist. </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
