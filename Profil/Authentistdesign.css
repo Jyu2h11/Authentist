@@ -1,49 +1,19 @@
-.header {
+header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 	background-color: #FFFEF3;
+}
+
+.sub {
 	display: flex;
     align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    padding: 0 88px;
-    position: fixed;
-    z-index: 10;
-    width: 100%;
+	margin: 10px 107px;
 }
 
-
-.menu .menu-header li {
-	font-family: 'Maitree';
-	font-size: 18px;
-	color: #000000;
-	text-decoration: none;
-}
-
-.part-right .part-top .menu .menu-header .btn {
-	border: 1px solid black;
-	padding: 0px 10px;
-	background-color: #DABAF9;
-	height: 50px;
-    display: flex;
-    align-items: center;
-}
-
-
-.part-right .part-top {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-    height: 60px;
-}
-
-
-.icons {
-	display: flex;
-	justify-content: flex-end;
-	gap: 20px;
-	height: 40px;
-}
-
-.part-bottom .menu-2 .menu-header-2 li {
+.menu-header-2 li {
 	font-family: 'Maitree';
 	font-size: 18px;
 	color: #000000;
@@ -54,65 +24,30 @@
 	flex-direction: row;
 }
 
-
 .look {
 	width: 140px;
 	height: 40px;
 	background-color: #FFFEF3;
 	border: 1px solid #000000;
-	font-family: 'Maitree';
-	font-size: 18px;
-	color: #7B7B7B;
 	padding-left: 90px;
-    margin-top: 5px;
 	background-image: url('../Images/Loupe.svg');
-	background-repeat: no-repeat;
 	background-position-x: 20px;
-	background-position-y: center;
 }
 
 .part-bottom {
 	display: flex;
 	align-items: center;
+	border-left: solid 1px black;
+	padding-left: 20px;
 }
 
-.part-bottom .menu-2 .menu-header-2 {
+.menu-header-2 {
 	display: flex;
 	gap: 30px;
     margin: 0 160px 0 0;
 }
 
-.part-top .menu .menu-header {
-	display: flex;
-	gap: 30px;
-	align-items: center;
-    padding-left: 0;
-}
-
-.header .border-1 {
-	border-top: 3px solid #000;
-	width : 100%;
-}
-
-.part-top {
-	border-bottom: 1px solid black;
-	margin-left: 40px;
-	display: flex;
-}
-
-.coeur {
-	border-right: 1px solid black;
-	padding-right: 20px;
-}
-
-
-.person {
-	border-right: 1px solid black;
-	padding-right: 20px;
-}
-
 .part-left {
-	border-right: 1px solid black;
 	padding-right: 20px;
 	height: 75px;
 }
@@ -122,62 +57,56 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /* Styles Commun */
 
 body {
 	font-size: 18px;
-	font-weight: 400;
-	line-height: 37%;
 	font-family: 'Maitree';
 	background: #FFFEF3;
-	color: black;
-	width: 100vw;
-	height: 100vh;
-	margin: 0;
 }
 
 h2 {
 	font-weight: 700;
 	font-size: 40px;
-	line-height: 50%;
 	font-family: 'Unbounded';
 }
 
 h3 {
 	font-weight: bold;
 	font-size: 26px;
-	line-height: 43%;
-	font-family: 'Maitree';
 }
 
 button {
-	font-weight: 400;
 	font-size: 18px;
 	font-family: 'Maitree';
 	background: #FFFEF3;
 	padding-left: 10px;
 	padding-right: 10px;
-	margin-left: 7px;
 }
 
 .container {
 	display: flex;
 	max-width: 100vh;
-	max-height: 100vh;
 	padding-top: 90px;
 }
 
 /* Barre de gauche */
 
 .menubarregauche {
-	display: flex;
-	flex-direction: column;
-	list-style-type: none;
-	margin-left: 0px;
 	line-height: 70px;
 	font-weight: bold;
-	padding-left: 0px;
-
 }
 
 .div1 h3{
@@ -185,9 +114,6 @@ button {
 }
 
 #Juliette {
-	margin-left: 0px;
-	font-family: 'Maitree';
-	font-size: 18px;
 	padding-left: 60px;
 	width: 500px;
 }
@@ -196,7 +122,6 @@ button {
 	margin-left: 60px;
 	margin-top: 30px;
 	border-style: solid;
-	border-color: black;
 	border-width: 0.5px;
 
 }
@@ -204,9 +129,9 @@ button {
 .div1 {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	align-items: flex-start;
 	width: 20%;
+	gap: 25px;
 }
 
 #sedeco{
@@ -218,7 +143,7 @@ button {
 
 .div2 {
 	background: #94BCF9;
-	height: 85vh;
+	height: 87vh;
 	padding: 0px 50px;
 	margin-left: 140px;
 }
@@ -227,29 +152,25 @@ button {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	padding: 15px 0;
 }
 
 .infoContainer {
 	display: flex;
-	justify-content: flex-start;
 	align-items: flex-start;
-	background: #94BCF9;
 	gap: 10px;
 }
 
 .profil {
 	line-height: 25px;
-	list-style-type: none;
 	border-style: solid;
 	border-width: 2px;
 	width: 230px;
 	margin-right: 10px;
-	margin-top: 0;
 }
 
 .profil li {
-	margin: 30px 0;
+	margin: 30px 0 30px 40px;
 }
 
 .profil li:nth-child(1){
@@ -258,35 +179,26 @@ button {
 }
 
 fieldset{
-	padding: 0;
-	margin: 0;
 	background-color: #FFFFFF;
 	width: 377px;
 	border-style: solid;
     border-width: 1px;
-    border-color: black;
 }
 
+fieldset p{
+	margin-bottom: 25px;
+}
 
-
-.Identite{
+.info{
 	line-height: 30px;
 	padding-left: 40px;
 }
 
-.Livraison{
-	line-height: 30px;
-	padding-left: 40px;
+legend {
+	padding: 20px 0;
 }
 
-.Contact{
-	line-height: 30px;
-	padding-left: 40px;
-	margin-top: 10px;
-}
-
-
-.Identite img{
+.info img{
 	margin-left: 80px;
 }
 
@@ -327,9 +239,6 @@ label{
 }
 
 .div2 button{
-	position: center;
-	border-style: solid;
-	border-color: black;
 	border-width: 1px;
 }
 
@@ -339,35 +248,47 @@ label{
 	padding-right: 5px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Footer*/
 
-.footer {
+footer {
 	background-color: black;
     margin-top: 1%;
+	color: white;
 }
 
 .top-part {
 	display: flex;
 }
 
-.footer .top-part .partie-1 {
-	margin: 40px;
-}
-
 .footer p {
 	color: white;
-	font-family: 'Maitree';
 }
 
 .exclu {
-	font-size: 18px;
 	font-weight: bold;
 	margin-bottom: 15px;
 }
 
 .cookies {
-	font-size: 18px;
-	font-weight: regular;
 	margin-top: 15px;
 }
 
@@ -387,13 +308,8 @@ label{
 
 .email {
 	width: 300px;
-	height: 71px;
-	left: 82px;
-	top: 6476px;
 	background: #FFFEF3;
 	border: 1px solid #000000;
-	font-family: 'Maitree';
-	font-size: 18px;
 }
 
 input::placeholder {
@@ -407,74 +323,21 @@ input {
 .ok {
 	width: 101px;
 	height: 75px;
-	left: 433px;
-	top: 6476px;
 	background: #94BCF9;
 	border: 1px solid #000000;
-	font-size: 18px;
-	font-family: 'Maitree';
 }
 
 .forme {
 	display: flex;
-	flex-direction: row;
-	align-items: stretch;
 }
 
-.footer li {
-	color: white;
-	text-decoration: none;
-	font-size: 18px;
-	font-family: 'Maitree';
-	font-weight: 400;
-	display: flex;
-	flex-direction: row;
-}
-
-ul {
-	font-size: 18px;
+.cat {
 	font-weight: bold;
-	font-family: 'Maitree';
-	font-weight: 400;
+	margin-bottom: 20px;
 }
 
-.footer .partie-2 {
-	margin: 40px;
-
-}
-
-.artiste {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 50px;
-}
-
-.plan {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 50px;
-}
-
-.aide {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 50px;
-}
-
-.footer .partie-3 {
-	margin: 40px;
-
-}
-
-.footer .partie-4 {
-	margin: 40px;
-
-}
-
-.paiement {
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 10px;
+.parties {
+	margin: 40px 40px 0 40px;
 }
 
 .icon-paiement {
@@ -482,7 +345,7 @@ ul {
 	gap: 20px;
 }
 
-.foot .autre {
+.autre {
 	display: flex;
 }
 
@@ -505,28 +368,13 @@ ul {
     margin-left: 475px;
 }
 
-
 .second-part {
 	padding-bottom: 10px;
 }
-
-.liste-icon {
-	padding-left: 0px;
-}
-
-
-.all-header{
-	margin: 80px;
-}
-
-.body {
-	background-color: #FFFEF3;
-}
-
-.lesartistes li {
+.categories li {
 	line-height: 35px;
 }
 
-.lesguides li {
-	line-height: 35px;
+.categories {
+	margin-bottom: 40px;
 }

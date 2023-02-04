@@ -9,20 +9,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Maitree:wght@400;700&display=swap" rel="stylesheet">
 
+        <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="authentistdesign.css" />
 
+        <meta charset="utf-8">
     </head>
 
     <body>
-        <header class="header">
-            <a href="../homepage/homepage.html">
-                <div class="part-left">
-                    <img class="logo-auth" src="../Images/Authentist..svg"/> 
-                </div>    
-            </a>
-            
-            <div class="part-right">
-
+        <header>
+            <div class="sub">
+                <a href="../homepage/homepage.html">
+                    <div class="part-left">
+                        <img class="logo-auth" src="../Images/Authentist..svg"/> 
+                    </div>    
+                </a>
+    
                 <div class="part-bottom">
                     <nav class="menu-2">
                         <ul class="menu-header-2">
@@ -34,7 +35,7 @@
                             <li>Artistes</li>
                         </ul>
                     </nav>
-
+    
                     <form  class="recherche" action="monaction.php" method="post" enctype="multipart/form-data"> 
                         <input  class="look" type="text" name="recherche" placeholder="Recherche" />
                     </form>    
@@ -48,11 +49,9 @@
                 <h3><b id="Juliette">Juliette Cortes</b></h3>
 
                 <ul class="menubarregauche">
-                    <strong>
-                        <li>Ma collection</li>
-                        <li>Profil</li>
-                        <li>Favoris</li>
-                    </strong>
+                    <li>Ma collection</li>
+                    <li>Profil</li>
+                    <li>Favoris</li>
                 </ul>
 
                 <button id="sedeco">Se déconnecter</button>
@@ -72,7 +71,7 @@
                     </ul>
 
                     <fieldset>
-                        <div class="Identite">
+                        <div class="info">
                             <legend>
                                 <h3>Identité</h3>
                             </legend>
@@ -95,7 +94,7 @@
 
                     <div class="div3">
                         <fieldset>
-                            <div class="Livraison">
+                            <div class="info">
                                 <legend>
                                     <h3>Livraison</h3>
                                 </legend>
@@ -116,7 +115,7 @@
                         </fieldset>
 
                         <fieldset>
-                            <div class="Contact">
+                            <div class="info">
                                 <legend>
                                     <h3>Contact</h3>
                                 </legend>
@@ -136,10 +135,10 @@
             </div>
         </div>
         
-        <footer class="footer" >
+        <footer>
 
             <div class="top-part">
-                <div class="partie-1">
+                <div class="parties">
                     <img class="logo-authentist" src="../Images/Authentist.svg">
                     <ul class="liste-icon">
                         <div class="reseaux">
@@ -162,9 +161,9 @@
                     </p>
                 </div>
 
-                <div class="partie-2">
-                    <ul class="lesartistes"> 
-                        <li class="plan"> Plan du site </li>
+                <div class="parties">
+                    <ul class="categories"> 
+                        <li class="cat"> Plan du site </li>
                         <li>Peinture</li>
                         <li>Sculpture</li>
                         <li>Photographie</li>
@@ -174,9 +173,9 @@
                     </ul>
                 </div>
 
-                <div class="partie-3">  
-                    <ul class="lesguides" >
-                        <li class="aide"> Aide et guides </li>
+                <div class="parties">  
+                    <ul class="categories" >
+                        <li class="cat"> Aide et guides </li>
                         <li> Qui sommes-nous ? </li>
                         <li> Comment ça marche ? </li>
                         <li> Mon compte </li>
@@ -186,16 +185,16 @@
                     </ul>
                 </div>
 
-                <div class="partie-4">
-                    <ul class="separation" > 
-                        <li class="artiste"> Pour les artistes </li>
+                <div class="parties">
+                    <ul class="categories" > 
+                        <li class="cat"> Pour les artistes </li>
                         <li> Connexion Authentist </li>
                         <li> Envoyer votre candidature </li>
                         <li> Questions fréquentes </li>
                     </ul>
                 
-                    <ul> 
-                        <li class="paiement" > Paiement sécurisé  </li>
+                    <ul class="categories"> 
+                        <li class="cat" > Paiement sécurisé  </li>
                         <div class="icon-paiement"> 
                             <li> <img src="../Images/paypal.png"> </li>
                             <li> <img src="../Images/american.png"> </li>
@@ -220,7 +219,5 @@
                 </div>
             </div>
         </footer>
-
     </body>
-
 </html>
